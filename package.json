@@ -1,0 +1,31 @@
+{
+  "name": "bookhub",
+  "version": "1.0.0",
+  "description": "Include Bootstrap's source Sass and individual JavaScript plugins with Vite.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix --ignore-pattern ./.gitignore",
+    "lint:format": "prettier --log-level warn --write \"src/**/*.{js,jsx,ts,tsx,css,scss,json,md",
+    "lint": "npm run lint:format && npm run lint:fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-inject": "^5.0.5",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
+    "sass": "^1.77.8",
+    "vite": "^5.4.3"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1"
+  }
+}
