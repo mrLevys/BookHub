@@ -1,7 +1,8 @@
-import '../scss/styles.scss'
-import * as bootstrap from 'bootstrap'
-import $ from 'jquery'
+import '../scss/styles.scss';
+import * as bootstrap from 'bootstrap';
+import CustomCarouselComponent from './carousel';
+import $ from 'jquery';
 
-$(document).ready(function() {
-    console.log("jQuery está funcionando!");
+$(document).ready(function () {
+  CustomCarouselComponent();
 });

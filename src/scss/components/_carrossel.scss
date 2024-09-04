@@ -1,0 +1,54 @@
+.customCarousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+    padding: 10px;
+  }
+
+  &__item {
+    flex-shrink: 0;
+    min-width: 120px;
+    width: 100%;
+    margin: 0 10px;
+    text-align: center;
+
+    &-image {
+      max-width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+
+    &-title {
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      min-width: 150px;
+    }
+  }
+
+  &__control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+
+    &--prev {
+      left: 10px;
+    }
+
+    &--next {
+      right: 10px;
+    }
+  }
+}
